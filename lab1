@@ -1,0 +1,13 @@
+from math import *
+epsilon = 0.01
+x = float(input("x i daxil edin:"))
+netice=0
+n = 1
+baslangic=sin(x)
+while abs(baslangic) >  epsilon: 
+    netice+=baslangic
+    baslangic=sin((2 * n - 1) * x) / (2 * n - 1) 
+    n+=1
+    print(baslangic)
+    
+print(netice)
